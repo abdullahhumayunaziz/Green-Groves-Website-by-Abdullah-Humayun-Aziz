@@ -1,0 +1,525 @@
+.himg1{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 100px;
+    height: 500px;
+    width: 650px;  
+    border-radius: 30px;
+    overflow: hidden;  
+    cursor: pointer;
+}
+.hp1{
+    position: absolute;
+    margin-top: 360px;
+    font-weight: bolder;
+    margin-left: 50px;
+    font-family: cursive;
+
+}
+.hdiv1{
+    display: flex;
+    margin-left: 705px;
+    margin-top: 35px;
+    gap: 20px;
+    height: 120px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hcolor{
+    color: green;
+    font-size: 50px;
+    margin-top: 25px;
+    font-family: cursive;
+}
+.hcolor1{
+    font-weight: bolder;
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+}
+.hh1{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 100px;
+    color: green;
+    font-size: 50px;
+    font-family: cursive;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+} 
+
+.line {
+    height: 1px; 
+    background-color: green; 
+}
+.hmaindiv{
+    margin-top: 100px;
+}
+.hp2{
+    font-size: 25px;
+    position: absolute;
+    margin-left: 220px;
+    color: green;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-family: cursive;
+}
+.hh2{
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 50px;
+    font-size: 22px;
+    color: green;
+    font-family: cursive;
+}
+.hmaindiv2{
+    display: flex;
+    margin-top: 40px;
+    height: 450px;
+    width: 1225px;
+    overflow: hidden;
+    gap: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 50px;
+}
+.himg2{
+    background-size: cover;
+    height: 350px;
+    width:268px;
+    cursor: pointer;
+}
+.hdiv2{
+    margin-top: 50px;
+    height: 350px;
+    width: 400px;
+    border-radius: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+/* .hdiv2:hover{
+
+    transform: scale(1.144);
+} */
+.hdiv3{
+    height: px;
+    width: 400px;
+    border-radius: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.hdiv4{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.hdiv5 {
+    position: relative;
+    height: 350px;
+    width: 400px;
+    margin-right: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .hdiv5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    opacity: 0.8;
+  }
+  
+  .wave1 path {
+    fill:  antiquewhite;
+  }
+  
+  .wave2 path {
+
+    fill: rgb(115, 109, 101);  /* Deeper wave */
+
+  }
+.hp3{
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 340px;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    font-family: cursive;
+}
+.hh3{
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 340px;
+    font-size: x-large;
+    color: white;
+    font-family: cursive;
+}
+.hp4{
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 650px;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    font-family: cursive;
+}
+.hh4{
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 650px;
+    font-size: x-large;
+    color: white;
+    font-family: cursive;
+}
+.hp5{
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 960px;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    font-family: cursive;
+}
+.hh5{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 960px;
+    font-size: x-large;
+    color: white;
+    font-family: cursive;
+}
+img{
+    z-index: -1;
+    cursor: pointer;
+}
+.hh6{
+    color: green;
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: cursive;
+}
+.hdiv6{
+    height: 450px;
+    width: 600px;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+.hh7{
+    position: absolute;
+    font-size: 45px;
+    margin-left: 90px;
+    margin-top: 270px;
+    color: white;
+    font-family: cursive;
+}
+.hdiv7{
+    position: absolute;
+    height: 220px;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 645px;
+    cursor: pointer;
+}
+.hh8{
+    position: absolute;
+    margin-left: 660px;
+    margin-top: 110px;
+    font-size: 45px;
+    color: white;
+    font-family: cursive;
+}
+.hdiv8{
+    position: absolute;
+    height: 220px;
+    width: 290px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-top: 250px;
+    margin-left: 645px;
+    cursor: pointer;
+}
+.hh9{
+    position: absolute;
+    margin-left: 660px;
+    margin-top: 285px;
+    font-size: 30px;
+    color: white;
+    font-family: cursive;
+}
+.hdiv9{
+    position: absolute;
+    height: 220px;
+    width: 290px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-top: 250px;
+    margin-left: 955px;
+    cursor: pointer;
+}
+.hh10{
+    position: absolute;
+    margin-left: 970px;
+    margin-top: 330px;
+    font-size: 30px;
+    color: white;
+    font-family: cursive;
+}
+.hdiv10{
+    background-color: green;
+    height: 600px;
+    border-radius: 80px;
+    margin-left: 20px;
+    width: 1225px;
+    margin-top: 500px;
+}
+.hdiv11{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 40px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-left: 600px;
+    cursor: pointer;
+}
+.himg3{
+height: 500px;
+width: 500px;
+cursor: pointer;
+}
+.hdiv12{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-left: 880px;
+    margin-top: 150px;
+    cursor: pointer;
+}
+.himg4{
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+}
+.hh11{
+    position: absolute;
+    font-size: 45px;
+    color: white;
+    margin-top: 55px;
+    margin-left: 40px;
+    font-family: cursive;
+}
+.hp7{
+    position: absolute;
+    color: greenyellow;
+    margin-top: 245px;
+    margin-left: 40px;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: cursive;
+}
+.hp8{
+    position: absolute;
+    color: white;
+    margin-top: 285px;
+    margin-left: 40px;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: cursive;
+}
+.hp9{
+    position: absolute;
+    color: white;
+    margin-top: 395px;
+    margin-left: 40px;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: cursive;
+}
+.hbtn2{
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 490px;
+    cursor: pointer;
+    background-color: orange;
+    font-weight: bolder;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: cursive;
+}
+.hh12{
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: cursive;
+}
+.hmaindiv3{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.hdiv13{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 180px;
+}
+.hbtn3{
+    height: 40px;
+    width: 200px;
+    justify-content: center;
+    margin-top: 30px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: cursive;
+}
+.himg5{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    margin-top: 30px;
+}
+.hdiv14{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 128, 0, 0.521);
+    position: absolute;
+    margin-top: 30px;
+}
+.hdiv15{
+    position: absolute;
+    background-color: white;
+    height: 550px;
+    width: 800px;
+    margin-top: 75px;
+    margin-left: 463px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.hmaindiv4{
+    display: flex;
+    gap: 10px;
+    margin-top: 180px;
+    margin-left: 480px;
+    position: absolute;
+}
+.hdiv16{
+    height: 500px;
+    width: 365px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.himg6{
+    width: 365px;
+    height: 250px;
+}
+.hp10{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: green;
+    font-family: cursive;
+    font-weight: bolder;
+}
+.hh13{
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+    font-family: cursive;
+    font-size: 25px;
+}
+.hh14{
+    position: absolute;
+    margin-left: 50px;
+    color: white;
+    margin-top: 200px;
+    font-size: 50px;
+    font-family: cursive;
+}
+.hp11{
+    position: absolute;
+    margin-left: 50px;
+    color: white;
+    margin-top: 280px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: cursive;
+}
+#scrollUpBtn {
+    position: fixed;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid grey;
+    z-index: 1000;
+}
+
+#scrollUpBtn:hover {
+    background-color: white;
+    color: green;
+    border: 3px solid grey;
+}
+
+
+
+
+
+
+
+
+
+

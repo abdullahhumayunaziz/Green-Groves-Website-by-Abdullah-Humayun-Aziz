@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Groves Gardening</title>
+    <link rel="icon" href="eProjectHImages/navbar logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="essential.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <style>
+    * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgba(250, 235, 215, 0.445);
+        }
+        nav {
+            background: white;
+            font-family: cursive;
+            display: flex;
+            height: 80px;
+            top: 0px;
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .logo {
+            width: 200px;
+            height: 80px;
+        }
+
+        .logo:hover {
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 200px;
+            
+        }
+
+        nav ul li {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #435e4d;
+            padding: 12px 16px;
+            display: block;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            color: #8f8e7f;
+        }
+
+        .dropdown-content a:hover {
+            background: #bad0ba;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        a {
+            margin-top: 7px;
+        }
+        footer {
+            background-color: rgb(0, 56, 0);
+            position: absolute;
+            width: 100%;
+            height: 510px;
+            margin-top: 50px;
+        }
+
+        .logo1 {
+            margin-left: 80px;
+            width: 200px;
+            height: 100px;
+        }
+
+        .logo1:hover {
+            cursor: pointer;
+        }
+        .hh15{
+            color: white;
+            font-size: 50px;
+            margin-left: 100px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            position: absolute;
+        }
+        .hp12{
+            position: absolute;
+            margin-top: 90px;
+            color: white;
+            font-size: 20px;
+            margin-left: 100px;
+            font-weight: bolder;
+            font-family:  serif;
+        }
+        .input1{
+            position: absolute;
+            margin-top: 170px;
+            width: 350px;
+            border-radius: 20px;
+            margin-left: 100px;
+            height: 40px;
+            border: 2px solid green;
+        }
+        .input1::placeholder{
+            font-size: 15px;
+            font-weight: bolder;
+            text-align: center;
+            font-family:  serif;
+        }
+        .input1:focus{
+            border-color: green;
+            outline: none;
+        }
+        .input2{
+            position: absolute;
+            margin-left: 100px;
+            width: 150px;
+            height: 40px;
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+            border: 2px solid orange;
+            font-family:  serif;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 240px;
+            font-weight: bolder;
+        }
+        .hh16{
+            position: absolute;
+            color: white;
+            margin-left: 750px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 50px;
+        }
+        .ha1{
+            text-decoration: none;
+            margin-left: 750px;
+            color: white;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .ha2{
+            text-decoration: none;
+            margin-left: 750px;
+            color: white;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .hol1{
+            margin-top: 90px;
+        }
+        .hli1{
+            list-style-type: none;
+        }
+        
+        .himg7{
+            position: absolute;
+            z-index: 1;
+            margin-left: 750px;
+            margin-top: 350px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg8{
+            position: absolute;
+            z-index: 1;
+            margin-left: 800px;
+            margin-top: 360px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg9{
+            position: absolute;
+            z-index: 1;
+            margin-left: 850px;
+            margin-top: 350px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg10{
+            position: absolute;
+            z-index: 1;
+            margin-left: 900px;
+            margin-top: 360px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg11{
+            position: absolute;
+            z-index: 1;
+            margin-left: 950px;
+            margin-top: 350px;
+            height: 40px;
+            width: 40px;
+        }
+        .hp13{
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+        }
+        hr{
+            border: 1px solid yellowgreen;
+        }
+</style>
+</head>
+<body>
+      <!-- Navbar Start Here -->
+      <nav>
+        <img src="eProjectHImages/navbar logo.png" alt="" class="logo">
+        <ul>
+            <li><a href="index.html">Home Gardening</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Gardening Supplys</a>
+                <div class="dropdown-content">
+                    <a href="tools.html">Tools</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="suggestion.html">Suggestoin</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Gardening Resoures</a>
+                <div class="dropdown-content">
+                    <a href="essential.html">Essentials</a>
+                    <a href="pots&container.html">Pots & Containers</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar End Here -->
+
+    <div class="container">
+    <div class="div1">
+        <table>
+            <center><h2 class="h1">FERTILIZERS</h2></center><br>
+        <td><p class="p1">Fertilizer provides macro and micronutrients for plants to survive and thrive. this collection creates organic fertilers, from fish fertilizer to bone meal and everything in between. A small garden, water-soluble, slow release granular fertilizers, liquid like organic options, like fish emultion, and compost tea.</p></td>
+         <td><img src="eProjectHImages/depositphotos_62970837-stock-photo-hand-giving-chemical-fertilizer-to.jpg" class="img1"></td>
+    </table>
+    </div>
+
+    <div class="div2">
+        <table>
+            <center><h2 class="h2">SOIL</h2></center><br>
+        <td><p class="p2">The unconsolidated mineral or organic material
+            on the immediate surface of the Earth that serves as a natural medium for the growth of
+             land plants. For a garden, the suitable type of soil is loam- a well-draining mix of sand, silt, and clay that provides<br> good 
+             aecration and retains moisture well, making it ideal for a variety of plants while still being manageablein a smaller space.</p></td>
+             <td><img src="eProjectHImages/depositphotos_62970837-stock-photo-hand-giving-chemical-fertilizer-to.jpg" class="img2"></td>
+    </table>
+    </div>
+
+    <div class="div3">
+        <table>
+            <center><h2 class="h3">PESTICIDES FOR PLANT</h2></center><br>
+        <td><p class="p3">Pesticides are important. They help farmers grow more food on less land by protecting crops from pests, diseases and weeds as well as raising productivity per hectare.It increased crop and livestock yields, <br> improved food safety, human health, quality of life and longevity, and reduced drudgery, energy use and environmental degradation.</p></td>
+             <td><img src="eProjectHImages/spraying-pesticides.webp" class="img3"></td>
+    </table>
+    </div>
+</div>
+<button id="scrollUpBtn" onclick="scrollToTop()"><i class="ri-arrow-up-line"></i></button>
+    <!-- Footer Start Here -->
+    <footer data-aos="fade-down">
+        <img src="eProjectHImages/1384055.png" alt="" class="himg7" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/5968764.png" alt="" class="himg8" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"> 
+        <img src="eProjectHImages/3670151.png" alt="" class="himg9" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/3955024.png" alt="" class="himg10" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/3670147.png" alt="" class="himg11" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <h1 class="hh15" data-aos="fade-up">Learn to grow.</h1>
+        <p class="hp12" data-aos="fade-up">Sign up for weekly gardening tips, product <br> reviews and discounts.</p>
+        <input class="input1" type="text" placeholder="Enter your email to our newsletter" required data-aos="fade-up">
+        <input class="input2" type="button" value="Submit" data-aos="fade-up" onclick="submit()">
+        <h1 class="hh16" data-aos="fade-up">Company</h1>
+        <ol class="hol1" data-aos="fade-up">
+            <li class="hli1"><a class="ha1" href="index.html">Home Gardening</a></li>
+            <li class="hli1"><a class="ha1" href="about.html">About Us</a></li>
+            <li class="hli1"><a class="ha1" href="tools.html">Gardening Tools</a></li>
+            <li class="hli1"><a class="ha1" href="accessories.html">Gardening Accessories</a></li>
+            <li class="hli1"><a class="ha2" href="suggestion.html">Gardening Suggestoin</a></li>
+            <li class="hli1"><a class="ha2" href="essential.html">Gardening Essentials</a></li>
+            <li class="hli1"><a class="ha2" href="pots&container.html">Gardening Pots & Container</a></li>
+            <li class="hli1"><a class="ha2" href="contact.html">Contact Us</a></li>
+        </ol>
+        <img src="eProjectHImages/footer logo.png" alt="" class="logo1">
+        <hr>
+        <p class="hp13">© 2024/2025 Your Website | Designed by Abdullah Humayun Aziz S/O Muhammad Humayun</p>
+    </footer>
+    <!-- Footer End Here -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="file.js"></script>
+</body>
+</html

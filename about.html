@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Groves Gardening</title>
+    <link rel="icon" href="eProjectHImages/navbar logo.png">
+<!-- CDN Links Start Here -->
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+<!-- CDN Links End Here -->
+</head>
+<!-- Internal CSS Start Here -->
+<style>
+/* Body CSS Start Here */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgba(250, 235, 215, 0.445);
+    }
+/* Body CSS End Here */
+
+/* Navbar CSS Start Here */
+    nav {
+        background: white;
+        font-family: cursive;
+        display: flex;
+        height: 80px;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+    }
+    .logo {
+            width: 200px;
+            height: 80px;
+        }
+    .logo:hover {
+        cursor: pointer;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 200px;
+    }
+    nav ul li {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    nav a {
+        text-decoration: none;
+        color: #435e4d;
+        padding: 12px 16px;
+        display: block;
+    }
+    nav a:hover {
+        color: black;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 180px;
+        top: 100%;
+        left: 0;
+    }
+    .dropdown-content a {
+        padding: 10px;
+        color: #8f8e7f;
+    }
+    .dropdown-content a:hover {
+        background: #bad0ba;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    a {
+        margin-top: 7px;
+    }
+/* Navbar CSS End Here */
+
+/* Footer CSS Start Here */
+    footer {
+            background-color: rgb(0, 56, 0);
+            position: absolute;
+            width: 100%;
+            height: 450px;
+            margin-top: 30px;
+        }
+
+        .logo1 {
+            margin-left: 80px;
+            width: 200px;
+            height: 100px;
+        }
+
+        .logo1:hover {
+            cursor: pointer;
+        }
+        .hh15{
+            color: white;
+            font-size: 50px;
+            margin-left: 100px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 30px;
+            position: absolute;
+        }
+        .hp12{
+            position: absolute;
+            margin-top: 120px;
+            color: white;
+            font-size: 20px;
+            margin-left: 100px;
+            font-weight: bolder;
+            font-family:  serif;
+        }
+        .hinput1{
+            position: absolute;
+            margin-top: 200px;
+            width: 350px;
+            border-radius: 20px;
+            margin-left: 100px;
+            height: 40px;
+            border: 2px solid green;
+        }
+        .hinput1::placeholder{
+            font-size: 15px;
+            font-weight: bolder;
+            text-align: center;
+            font-family:  serif;
+        }
+        .hinput1:focus{
+            border-color: green;
+            outline: none;
+        }
+        .hinput2{
+            position: absolute;
+            margin-left: 100px;
+            width: 150px;
+            height: 40px;
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+            border: 2px solid orange;
+            font-family:  serif;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 270px;
+            font-weight: bolder;
+        }
+        .hh16{
+            position: absolute;
+            color: white;
+            margin-top: 30px;
+            margin-left: 750px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 50px;
+        }
+        .ha1{
+            text-decoration: none;
+            margin-top: 30px;
+            margin-left: 750px;
+            color: white;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .ha2{
+            text-decoration: none;
+            margin-top: 30px;
+            margin-left: 750px;
+            color: white;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .hol1{
+            margin-top: 120px;
+        }
+        .hli1{
+            list-style-type: none;
+        }
+        
+        .himg7{
+            position: absolute;
+            z-index: 1;
+            margin-left: 750px;
+            margin-top: 320px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg8{
+            position: absolute;
+            z-index: 1;
+            margin-left: 800px;
+            margin-top: 330px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg9{
+            position: absolute;
+            z-index: 1;
+            margin-left: 850px;
+            margin-top: 320px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg10{
+            position: absolute;
+            z-index: 1;
+            margin-left: 900px;
+            margin-top: 330px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg11{
+            position: absolute;
+            z-index: 1;
+            margin-left: 950px;
+            margin-top: 320px;
+            height: 40px;
+            width: 40px;
+        }
+        .hp13{
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+        }
+        hr{
+            border: 1px solid yellowgreen;
+        }
+/* Footer CSS End Here */
+</style>
+<!-- Internal CSS End Here -->
+<body>
+<!-- Navbar Start Here -->
+      <nav>
+        <img src="eProjectHImages/navbar logo.png" alt="" class="logo">
+        <ul>
+            <li><a href="index.html">Home Gardening</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Gardening Supplys</a>
+                <div class="dropdown-content">
+                    <a href="tools.html">Tools</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="suggestion.html">Suggestoin</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Gardening Resoures</a>
+                <div class="dropdown-content">
+                    <a href="essential.html">Essentials</a>
+                    <a href="pots&container.html">Pots & Containers</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<!-- Navbar End Here -->
+
+<!-- First Section  Start Here -->
+    <div class="adiv1" data-aos="zoom-in-up">
+        <img src="eProjectHImages/bg-newsletter.jpg" alt="" class="aimg1">
+    </div>
+<!-- First Section End Here -->
+
+<!-- Second Section Start Here -->
+    <h1 class="ah1" data-aos="zoom-in-down">We Exist To Help You Grow.</h1>
+    <p class="ap1" data-aos="fade-up"
+    data-aos-duration="1000">Our journey began like yours probably did - the simple desire to grow a few plants. Those early <br> grows opened our eyes to a different approach to life: growing our own food, flowers, and <br> cultivating a beautiful space to live in.</p>
+    <p class="ap1" data-aos="fade-up"
+    data-aos-duration="1000">But as our experience grew in the garden, we realized that “gardening” was…kind of hard to <br>learn. On top of that, a majority of the products on the market fell short of our expectations on  <br>quality, ease of use, and durability.</p>
+    <p class="ap1" data-aos="fade-up"
+    data-aos-duration="1000">First, we started sharing. Everything. Our gardening successes, failures (there were a lot of <br> them), and educational tips. Over the years, over 12+ million aspiring gardeners have come to <br> trust us for our gardening education on YouTube, Instagram, TikTok, and more.</p>
+    <p class="ap1" data-aos="fade-up"
+    data-aos-duration="1000">Next, we turned our focus to making gardening products that are actually designed by <br> gardeners. Every product we stock in our store is hand-selected after detailed research, testing, <br> and seasons worth of use in our own gardens.  If it doesn't meet our standards, we don’t carry <br> it in our store... plain and simple.</p>
+    <p class="ap1" data-aos="fade-up"
+    data-aos-duration="1000">From the sturdiest seed starting supplies, to meticulously crafted raised beds, to 650+ varieties <br> of non-GMO veggies, herbs, and flowers, we ensure our products “just work” for you and your  <br>garden.</p>
+    <p class="ap1" data-aos="fade-up"
+    data-aos-duration="1000">Because while gardening itself is messy and full of learning experiences, the products you use <br> to garden shouldn’t be.</p>
+<!-- Second Section End Here -->
+
+<!-- Third Section Start Here -->
+    <h1 class="ah2" data-aos="zoom-in-up">SHOP OUR FAVORITES</h1>
+    <div class="amaindiv">
+        <div class="adiv3" data-aos="zoom-in-left">
+            <img class="aimg2" src="eProjectHImages/Screen_Shot_2023-03-07_at_9.42.19_AM.webp" alt="">
+            <h1 class="a6">Best Sellers</h1>
+            </div>
+        <div class="adiv2" data-aos="zoom-in-down">
+            <img class="aimg2" src="eProjectHImages/EG_-_Square_1200_x_1200_-_Tomato_Shot_98e9170f-f3e5-480e-9f0e-7858addbe11d.webp" alt="">
+        <h1 class="a6">Blrdles Metal Garden Beds</h1>
+    </div>
+        <div class="adiv4" data-aos="zoom-in-right">
+            <img class="aimg2" src="eProjectHImages/EPIC_GARDENING_005224_3729_1_05582ec5-0d43-4bce-800a-d146dc3a2b21.webp" alt="">
+        <h1 class="a6">Seeds</h1>
+    </div>
+    </div>
+<!-- Third Section End Here -->
+
+<!-- Scrollup Button Start Here -->
+    <button id="scrollUpBtn" onclick="scrollToTop()"><i class="ri-arrow-up-line"></i></button>
+<!-- Scrollup Button End Here -->
+
+<!-- Footer Start Here -->
+     <footer data-aos="fade-down">
+        <img src="eProjectHImages/1384055.png" alt="" class="himg7" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/5968764.png" alt="" class="himg8" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"> 
+        <img src="eProjectHImages/3670151.png" alt="" class="himg9" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/3955024.png" alt="" class="himg10" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/3670147.png" alt="" class="himg11" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <h1 class="hh15" data-aos="fade-up">Learn to grow.</h1>
+        <p class="hp12" data-aos="fade-up">Sign up for weekly gardening tips, product <br> reviews and discounts.</p>
+        <input class="hinput1" type="text" placeholder="Enter your email to our newsletter" required data-aos="fade-up">
+        <input class="hinput2" type="button" value="Submit" data-aos="fade-up" onclick="submit()">
+        <h1 class="hh16" data-aos="fade-up">Company</h1>
+        <ol class="hol1" data-aos="fade-up">
+            <li class="hli1"><a class="ha1" href="index.html">Home Gardening</a></li>
+            <li class="hli1"><a class="ha1" href="about.html">About Us</a></li>
+            <li class="hli1"><a class="ha1" href="tools.html">Gardening Tools</a></li>
+            <li class="hli1"><a class="ha1" href="accessories.html">Gardening Accessories</a></li>
+            <li class="hli1"><a class="ha2" href="suggestion.html">Gardening Suggestoin</a></li>
+            <li class="hli1"><a class="ha2" href="essential.html">Gardening Essentials</a></li>
+            <li class="hli1"><a class="ha2" href="pots&container.html">Gardening Pots & Container</a></li>
+            <li class="hli1"><a class="ha2" href="contact.html">Contact Us</a></li>
+        </ol>
+        <img src="eProjectHImages/footer logo.png" alt="" class="logo1">
+        <hr>
+        <p class="hp13">© 2024/2025 Your Website | Designed by Abdullah Humayun Aziz S/O Muhammad Humayun</p>
+    </footer>
+<!-- Footer End Here -->
+
+<!-- JS Links Start Here -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="file.js"></script>
+<!-- JS Links End Here -->
+
+</body>
+</html>

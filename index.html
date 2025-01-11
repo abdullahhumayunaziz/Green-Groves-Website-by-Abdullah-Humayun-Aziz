@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Groves Gardening</title>
+    <link rel="icon" href="eProjectHImages/navbar logo.png">
+<!-- CDN Links Start Here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+<!-- CDN Links End Here -->
+
+<!-- Internal CSS Start Here -->
+    <style>
+/* Body CSS Start Here */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgba(250, 235, 215, 0.445);
+        }
+/* Body CSS End Here */
+
+/* Navbar CSS Start Here */
+        nav {
+            background: white;
+            font-family: cursive;
+            display: flex;
+            height: 80px;
+            top: 0px;
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .logo {
+            width: 200px;
+            height: 80px;
+        }
+
+        .logo:hover {
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 200px;
+            
+        }
+
+        nav ul li {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #435e4d;
+            padding: 12px 16px;
+            display: block;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            color: #8f8e7f;
+        }
+
+        .dropdown-content a:hover {
+            background: #bad0ba;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        a {
+            margin-top: 7px;
+        }
+/* Navbar CSS End Here */
+
+/* Footer CSS Start Here */
+        footer {
+            background-color: rgb(0, 56, 0);
+            position: absolute;
+            width: 100%;
+            height: 450px;
+            margin-top: 770px;
+        }
+
+        .logo1 {
+            margin-left: 80px;
+            width: 200px;
+            height: 100px;
+        }
+
+        .logo1:hover {
+            cursor: pointer;
+        }
+        .hh15{
+            color: white;
+            font-size: 50px;
+            margin-left: 100px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 30px;
+            position: absolute;
+        }
+        .hp12{
+            position: absolute;
+            margin-top: 120px;
+            color: white;
+            font-size: 20px;
+            margin-left: 100px;
+            font-weight: bolder;
+            font-family:  serif;
+        }
+        .input1{
+            position: absolute;
+            margin-top: 200px;
+            width: 350px;
+            border-radius: 20px;
+            margin-left: 100px;
+            height: 40px;
+            border: 2px solid green;
+        }
+        .input1::placeholder{
+            font-size: 15px;
+            font-weight: bolder;
+            text-align: center;
+            font-family:  serif;
+        }
+        .input1:focus{
+            border-color: green;
+            outline: none;
+        }
+        .input2{
+            position: absolute;
+            margin-left: 100px;
+            width: 150px;
+            height: 40px;
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+            border: 2px solid orange;
+            font-family:  serif;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 270px;
+            font-weight: bolder;
+        }
+        .hh16{
+            position: absolute;
+            color: white;
+            margin-top: 30px;
+            margin-left: 750px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 50px;
+        }
+        .ha1{
+            text-decoration: none;
+            margin-top: 30px;
+            margin-left: 750px;
+            color: white;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .ha2{
+            text-decoration: none;
+            margin-top: 30px;
+            margin-left: 750px;
+            color: white;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .hol1{
+            margin-top: 120px;
+        }
+        .hli1{
+            list-style-type: none;
+        }
+        
+        .himg7{
+            position: absolute;
+            z-index: 1;
+            margin-left: 750px;
+            margin-top: 320px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg8{
+            position: absolute;
+            z-index: 1;
+            margin-left: 800px;
+            margin-top: 330px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg9{
+            position: absolute;
+            z-index: 1;
+            margin-left: 850px;
+            margin-top: 320px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg10{
+            position: absolute;
+            z-index: 1;
+            margin-left: 900px;
+            margin-top: 330px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg11{
+            position: absolute;
+            z-index: 1;
+            margin-left: 950px;
+            margin-top: 320px;
+            height: 40px;
+            width: 40px;
+        }
+        .hp13{
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+        }
+        hr{
+            border: 1px solid yellowgreen;
+        }
+/* Footer CSS End Here */
+    </style>
+<!-- Internal CSS End Here -->
+</head>
+<body>
+<!-- Navbar Start Here -->
+    <nav>
+        <img src="eProjectHImages/navbar logo.png" alt="" class="logo">
+        <ul>
+            <li><a href="index.html">Home Gardening</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Gardening Supplys</a>
+                <div class="dropdown-content">
+                    <a href="tools.html">Tools</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="suggestion.html">Suggestoin</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Gardening Resoures</a>
+                <div class="dropdown-content">
+                    <a href="essential.html">Essentials</a>
+                    <a href="pots&container.html">Pots & Containers</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<!-- Navbar End Here -->
+
+<!-- First Section Start Here -->
+    <div class="himg1" data-aos="fade-right">
+        <img src="eProjectHImages/raised-bed-garden-benefits-680x505.webp" alt="Loading">
+    </div>
+    <div class="hp1" data-aos="fade-right">
+        <p class="hcolor">
+        <h3 class="hcolor1">Raised Bed Gardening</h3>
+
+        <h1 class="hcolor">15 Benefits of Raised <br> Bed Gardening</h1>
+        </p>
+    </div>
+    <br>
+    <div class="container">
+        <h1 class="hh1" data-aos="fade-up">TRENDING</h1>
+    </div>
+    <div class="hmaindiv">
+        <div class="hdiv1" data-aos="fade-up">
+            <img class="himg" src="eProjectHImages/longest-flowering-bulbs-300x169.webp" alt="Loading">
+            <p class="hp2" data-aos="fade-up">Bulbs</p>
+            <h4 class="hh2" data-aos="fade-up">21 Longest-Flowering Bulbs <br> to Plant This Season</h4>
+        </div>
+        <div class="hdiv1" data-aos="fade-up">
+            <img class="himg" src="eProjectHImages/fall-herbs-300x169.jpg" alt="Loading">
+            <p class="hp2" data-aos="fade-up">Herbs</p>
+            <h4 class="hh2" data-aos="fade-up">19 Herbs That Thrive in the <br> Fall</h4>
+        </div>
+        <div class="hdiv1" data-aos="fade-up">
+            <img class="himg" src="eProjectHImages/longest-flowering-bulbs-300x169.webp" alt="Loading">
+            <p class="hp2" data-aos="fade-up">Flowers</p>
+            <h4 class="hh2" data-aos="fade-up">23 Heirloom Chrysanthemum <br> Varieties for the Fall Garden</h4>
+        </div>
+    </div>
+<!-- First Section End Here -->
+
+<!-- Second Section Start Here -->
+    <div class="hmaindiv2">
+    <div class="hdiv2" data-aos="fade-right">
+        <img class="himg2" src="eProjectHImages/Capture.PNG" alt="Loading">
+    </div>
+    <div class="hdiv5" data-aos="fade-up">
+        <img src="eProjectHImages/metal-raised-bed-garden-320x420.jpg" alt="Loading">
+        <svg class="wave wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" preserveAspectRatio="none">
+          <path d="M0,50 C100,90 300,10 400,50 V100 H0 Z" />
+        </svg>
+        <svg class="wave wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" preserveAspectRatio="none">
+          <path d="M0,60 C100,100 300,20 400,60 V100 H0 Z" />
+        </svg>
+      </div>
+      <p class="hp3" data-aos="fade-up">Shop</p>
+        <h4 class="hh3" data-aos="fade-up">Raised Beds</h4>
+    <div class="hdiv5" data-aos="fade-down">
+        <img src="eProjectHImages/Seedlings-Growing-in-Containers-320x420.webp" alt="Loading">
+        <svg class="wave wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" preserveAspectRatio="none">
+          <path d="M0,50 C100,90 300,10 400,50 V100 H0 Z" />
+        </svg>
+        <svg class="wave wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" preserveAspectRatio="none">
+          <path d="M0,60 C100,100 300,20 400,60 V100 H0 Z" />
+        </svg>
+      </div>
+      <p class="hp4" data-aos="fade-down">Shop</p>
+      <h4 class="hh4" data-aos="fade-down">Seeds</h4>
+    <div class="hdiv5" data-aos="fade-left">
+        <img src="eProjectHImages/Someone-scooping-starting-metrial-into-small-compartments-of-seed-tray-320x420.jpg" alt="Loading">
+        <svg class="wave wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" preserveAspectRatio="none">
+          <path d="M0,50 C100,90 300,10 400,50 V100 H0 Z" />
+        </svg>
+        <svg class="wave wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" preserveAspectRatio="none">
+          <path d="M0,60 C100,100 300,20 400,60 V100 H0 Z" />
+        </svg>
+      </div>
+      <p class="hp5" data-aos="fade-left">Shop</p>
+      <h4 class="hh5" data-aos="fade-left">Up to 40% off <br> Black Friday deals!</h4>
+    </div>
+<!-- Second Section End Here -->
+
+<!-- Third Section Start Here -->
+    <h1 align="center" class="hh6" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">EDITOR'S PICKS</h1>
+    <div class="hdiv6" data-aos="fade-up-right">
+        <img src="eProjectHImages/Black-Touch-Dahila-growig-in-the-garden-with-pink-and-black-blooms-999x740.webp" alt="">
+    </div>
+    <h1 class="hh7" align="center" data-aos="fade-up-right">Dahlia Flowers: <br> How To Grow Dahlias <br> By The Bunch</h1>
+    <div class="hdiv7" data-aos="fade-up-left">
+        <img src="eProjectHImages/Flower-Garen-959x370.jpg" alt="">
+    </div>
+    <h1 class="hh8" data-aos="fade-up-left">21 Easy Perennial Plants for Beginner Gardeners</h1>
+    <div class="hdiv8" data-aos="flip-left">
+        <img src="eProjectHImages/Colourful-planting-in-a-raised-bed-479x368.jpg" alt="">
+    </div>
+    <h1 class="hh9" data-aos="flip-left">21 Best <br> Flowers for <br> Growing in <br> Raised Beds</h1>
+    <div class="hdiv9" data-aos="flip-right">
+        <img src="eProjectHImages/Types-of-Flowers-in-Garden-479x368.jpg" alt="">
+    </div>
+    <h1 class="hh10" data-aos="flip-right">Types of Flowers <br> With Names and Pictures</h1>
+<!-- Third Section End Here -->
+
+<!-- Forth Section Start Here -->
+    <div class="hdiv10">
+        <div class="hdiv11" data-aos="flip-up">
+            <img class="himg3" src="eProjectHImages/Three-in-One-Bed-in-Use-678x678.webp" alt="">
+        </div>
+        <div class="hdiv12" data-aos="flip-down">
+        <img class="himg4" src="eProjectHImages/Three-in-One-Bed-320x320.webp" alt="">
+    </div>
+    <h1 class="hh11" data-aos="zoom-in-up">3- Minute Raised <br> Garden Bed and <br> Extension Kit</h1>
+    <p class="hp7" data-aos="zoom-in-up">Price: $99.99</p>
+    <p class="hp8" data-aos="zoom-in-up">Introducing the 3-Minute Raised Bed <br> and Extension Kit Add-On–your fast track <br> to a premium garden experience!</p>
+    <p class="hp9" data-aos="zoom-in-up"><b>This raised garden bed <br> assembles in minutes, tool free!</b></p>
+    <input class="hbtn2" type="button" value="Buy Now" data-aos="zoom-in-up" onclick="buynow()">
+    </div>
+<!-- Forth Section End Here -->
+
+<!-- Fifth Section Start Here -->
+    <h1 class="hh12" data-aos="fade-up"
+    data-aos-duration="3000">SHOP BY CATEGORY</h1>
+    <div class="hmaindiv3">
+        <div class="hdiv13" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"><img  src="eProjectHImages/metal-raised-bed-garden-200x200.jpg" alt=""></div>
+        <div class="hdiv13" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"><img  src="eProjectHImages/Cedar-Raised-Garden-Bed-in-Use-200x200.webp" alt=""></div>
+        <div class="hdiv13" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"><img  src="eProjectHImages/Seedlings-Growing-in-Containers-200x200.jpg" alt=""></div>
+        <div class="hdiv13" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"><img  src="eProjectHImages/A-focused-shot-of-a-persons-hand-inspecting-soil-with-a-soil-meter-in-the-background-200x200.jpg" alt=""></div>
+        <div class="hdiv13" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"><img  src="eProjectHImages/Gardening-tools-placed-on-a-wooden-table-200x200.jpg" alt=""></div>
+    </div>
+    <center><input class="hbtn3" type="button" value="Shop Best Sellers" data-aos="flip-up" onclick="shopbestsellers()"></center>
+<!-- Fifth Section End Here -->
+
+<!-- Sixth Section Start Here -->
+        <img class="himg5"  data-aos="fade-up"
+        data-aos-duration="3000" src="eProjectHImages/seed-starting-methods-680x505.jpeg" alt="">
+        <div class="hdiv14" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"><div class="hdiv15"></div></div>
+        <div class="hmaindiv4">
+            <div class="hdiv16">
+                <img class="himg6" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" src="eProjectHImages/scarify-seeds-440x326.jpeg" alt="">
+                <p class="hp10"  data-aos="fade-up"
+                data-aos-duration="3000">Seeds</p>
+                <h1 class="hh13" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">Seeds Scarification: How to Scarify Seeds For Better Germination</h1>
+            </div>
+            <div class="hdiv16">
+                <img class="himg6" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" src="eProjectHImages/seedling-myths--440x326.webp" alt="">
+                <p class="hp10"  data-aos="fade-up"
+                data-aos-duration="3000">Seeds</p>
+                <h1 class="hh13" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">7 Seedling Myths to Stop Believing</h1>
+            </div>
+        </div>
+        <h1 class="hh14"  data-aos="fade-up"
+        data-aos-duration="3000">Seeds</h1>
+        <p class="hp11" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">Looking to get your seeds started <br> indoors or direct sown the right way? <br> Find out all you need to know about <br> starting seeds in these comprehensive <br> guides!</p>
+<!-- Sixth Section End Here -->
+
+<!-- Scroll Button Start Here -->
+        <button id="scrollUpBtn" onclick="scrollToTop()"><i class="ri-arrow-up-line"></i></button>
+<!-- Scroll Button End Here -->
+
+<!-- Footer Start Here -->
+    <footer data-aos="fade-down">
+        <img src="eProjectHImages/1384055.png" alt="" class="himg7" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/5968764.png" alt="" class="himg8" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"> 
+        <img src="eProjectHImages/3670151.png" alt="" class="himg9" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/3955024.png" alt="" class="himg10" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/3670147.png" alt="" class="himg11" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <h1 class="hh15" data-aos="fade-up">Learn to grow.</h1>
+        <p class="hp12" data-aos="fade-up">Sign up for weekly gardening tips, product <br> reviews and discounts.</p>
+        <input class="input1" type="text" placeholder="Enter your email to our newsletter" required data-aos="fade-up">
+        <input class="input2" type="button" value="Submit" data-aos="fade-up" onclick="submit()">
+        <h1 class="hh16" data-aos="fade-up">Company</h1>
+        <ol class="hol1" data-aos="fade-up">
+            <li class="hli1"><a class="ha1" href="index.html">Home Gardening</a></li>
+            <li class="hli1"><a class="ha1" href="about.html">About Us</a></li>
+            <li class="hli1"><a class="ha1" href="tools.html">Gardening Tools</a></li>
+            <li class="hli1"><a class="ha1" href="accessories.html">Gardening Accessories</a></li>
+            <li class="hli1"><a class="ha2" href="suggestion.html">Gardening Suggestoin</a></li>
+            <li class="hli1"><a class="ha2" href="essential.html">Gardening Essentials</a></li>
+            <li class="hli1"><a class="ha2" href="pots&container.html">Gardening Pots & Container</a></li>
+            <li class="hli1"><a class="ha2" href="contact.html">Contact Us</a></li>
+        </ol>
+        <img src="eProjectHImages/footer logo.png" alt="" class="logo1">
+        <hr>
+        <p class="hp13">© 2024/2025 Your Website | Designed by Abdullah Humayun Aziz S/O Muhammad Humayun</p>
+    </footer>
+<!-- Footer End Here -->
+
+<!-- JS Links Start Hrer -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="file.js"></script>
+<!-- JS Links End Here -->
+
+</body>
+</html>

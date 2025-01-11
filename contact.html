@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Groves Gardening</title>
+    <link rel="icon" href="eProjectHImages/navbar logo.png">
+<!-- CDN Links Start Here -->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+<!-- CDN Links End Here -->
+</head>
+<!-- Internal CSS Start Here -->
+<style>
+/* Body CSS Start Here */
+    * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgba(250, 235, 215, 0.445);
+        }
+/* Body CSS End Here */
+
+/* Navbar CSS Start Here */
+        nav {
+            background: white;
+            font-family: cursive;
+            display: flex;
+            height: 80px;
+            top: 0px;
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+        }
+        .logo {
+            width: 200px;
+            height: 80px;
+        }
+        .logo:hover {
+            cursor: pointer;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 200px;
+            
+        }
+        nav ul li {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #435e4d;
+            padding: 12px 16px;
+            display: block;
+        }
+        nav a:hover {
+            color: black;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            top: 100%;
+            left: 0;
+        }
+        .dropdown-content a {
+            padding: 10px;
+            color: #8f8e7f;
+        }
+        .dropdown-content a:hover {
+            background: #bad0ba;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        a {
+            margin-top: 7px;
+        }
+/* Nacvbar CSS End Here */
+
+/* Footer CSS Start Here */
+        footer {
+            background-color: rgb(0, 56, 0);
+            position: absolute;
+            width: 100%;
+            height: 450px;
+            margin-top: 30px;
+        }
+
+        .logo1 {
+            margin-left: 80px;
+            width: 200px;
+            height: 100px;
+        }
+
+        .logo1:hover {
+            cursor: pointer;
+        }
+        .hh15{
+            color: white;
+            font-size: 50px;
+            margin-left: 100px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 30px;
+            position: absolute;
+        }
+        .hp12{
+            position: absolute;
+            margin-top: 120px;
+            color: white;
+            font-size: 20px;
+            margin-left: 100px;
+            font-weight: bolder;
+            font-family:  serif;
+        }
+        .input1{
+            position: absolute;
+            margin-top: 200px;
+            width: 350px;
+            border-radius: 20px;
+            margin-left: 100px;
+            height: 40px;
+            border: 2px solid green;
+        }
+        .input1::placeholder{
+            font-size: 15px;
+            font-weight: bolder;
+            text-align: center;
+            font-family:  serif;
+        }
+        .input1:focus{
+            border-color: green;
+            outline: none;
+        }
+        .input2{
+            position: absolute;
+            margin-left: 100px;
+            width: 150px;
+            height: 40px;
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+            border: 2px solid orange;
+            font-family:  serif;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 270px;
+            font-weight: bolder;
+        }
+        .hh16{
+            position: absolute;
+            color: white;
+            margin-top: 30px;
+            margin-left: 750px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 50px;
+        }
+        .ha1{
+            text-decoration: none;
+            margin-top: 30px;
+            margin-left: 750px;
+            color: white;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .ha2{
+            text-decoration: none;
+            margin-top: 30px;
+            margin-left: 750px;
+            color: white;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .hol1{
+            margin-top: 120px;
+        }
+        .hli1{
+            list-style-type: none;
+        }
+        
+        .himg7{
+            position: absolute;
+            z-index: 1;
+            margin-left: 750px;
+            margin-top: 320px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg8{
+            position: absolute;
+            z-index: 1;
+            margin-left: 800px;
+            margin-top: 330px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg9{
+            position: absolute;
+            z-index: 1;
+            margin-left: 850px;
+            margin-top: 320px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg10{
+            position: absolute;
+            z-index: 1;
+            margin-left: 900px;
+            margin-top: 330px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg11{
+            position: absolute;
+            z-index: 1;
+            margin-left: 950px;
+            margin-top: 320px;
+            height: 40px;
+            width: 40px;
+        }
+        .hp13{
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+        }
+        hr{
+            border: 1px solid yellowgreen;
+        }
+/* Footer CSS End Here */
+</style>
+<!-- Internal CSS End Here -->
+<body>
+<!-- Navbar Start Here -->
+     <nav>
+        <img src="eProjectHImages/navbar logo.png" alt="" class="logo">
+        <ul>
+            <li><a href="index.html">Home Gardening</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Gardening Supplys</a>
+                <div class="dropdown-content">
+                    <a href="tools.html">Tools</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="suggestion.html">Suggestoin</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Gardening Resoures</a>
+                <div class="dropdown-content">
+                    <a href="essential.html">Essentials</a>
+                    <a href="pots&container.html">Pots & Containers</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<!-- Navbar End Here -->
+    
+<!-- First Section Start Here -->
+     <div class="cdiv">
+        <div class="container" data-aos="fade-down">
+            <img class="img2" src="eProjectHImages/WhatsApp_Image_2024-12-14_at_4.37.53_PM-removebg-preview.png" alt="" data-aos="zoom-in-up">
+            <form action="/submit-form" method="post">
+                <label for="name"  data-aos="fade-right">Full Name</label>
+                <input type="text" class="cinput1" id="name" name="name" required   data-aos="fade-left">
+        
+                <label for="email"  data-aos="fade-right">Email Address</label>
+                <input type="email" class="cinput2" id="email" name="email" required data-aos="fade-left">
+        
+                <label for="message"  data-aos="fade-right" data-aos="fade-right">Message</label>
+                <textarea id="message" name="message" rows="4" required  data-aos="fade-left"></textarea>
+        
+                <button type="submit"  data-aos="fade-right" onclick="sendmessage()">Send Message</button>
+            </form>
+        </div>
+        <div class="div1" data-aos="fade-up">
+          <img class="img1" src="eProjectHImages/c210f01a84e6f750a4596ed238a8a09e.gif" alt="">
+        </div>
+<!-- First Section End Here -->
+
+<!-- Second Section Start Here -->
+        <center><iframe class="cifram1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2711.9192497226154!2d67.34951021978152!3d24.864600266831136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3330027d49fa5%3A0x4a09f9f0a67234f9!2sAptech%20Learning%20Centre%20Gulshan-e-Hadeed%20Branch!5e0!3m2!1sen!2s!4v1734358078540!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"></iframe></center>
+<!-- Second Section End Here -->
+
+<!-- Scrollup Button Start Here -->
+            <button id="scrollUpBtn" onclick="scrollToTop()"><i class="ri-arrow-up-line"></i></button>
+<!-- Scrollup Button End Here -->
+
+<!-- Footer Start Here -->
+    <footer data-aos="fade-down">
+        <img src="eProjectHImages/1384055.png" alt="" class="himg7" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/5968764.png" alt="" class="himg8" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"> 
+        <img src="eProjectHImages/3670151.png" alt="" class="himg9" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/3955024.png" alt="" class="himg10" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="eProjectHImages/3670147.png" alt="" class="himg11" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <h1 class="hh15" data-aos="fade-up">Learn to grow.</h1>
+        <p class="hp12" data-aos="fade-up">Sign up for weekly gardening tips, product <br> reviews and discounts.</p>
+        <input class="input1" type="text" placeholder="Enter your email to our newsletter" required data-aos="fade-up">
+        <input class="input2" type="button" value="Submit" data-aos="fade-up" onclick="submit()">
+        <h1 class="hh16" data-aos="fade-up">Company</h1>
+        <ol class="hol1" data-aos="fade-up">
+            <li class="hli1"><a class="ha1" href="index.html">Home Gardening</a></li>
+            <li class="hli1"><a class="ha1" href="about.html">About Us</a></li>
+            <li class="hli1"><a class="ha1" href="tools.html">Gardening Tools</a></li>
+            <li class="hli1"><a class="ha1" href="accessories.html">Gardening Accessories</a></li>
+            <li class="hli1"><a class="ha2" href="suggestion.html">Gardening Suggestoin</a></li>
+            <li class="hli1"><a class="ha2" href="essential.html">Gardening Essentials</a></li>
+            <li class="hli1"><a class="ha2" href="pots&container.html">Gardening Pots & Container</a></li>
+            <li class="hli1"><a class="ha2" href="contact.html">Contact Us</a></li>
+        </ol>
+        <img src="eProjectHImages/footer logo.png" alt="" class="logo1">
+        <hr>
+        <p class="hp13">© 2024/2025 Your Website | Designed by Abdullah Humayun Aziz S/O Muhammad Humayun</p>
+    </footer>
+<!-- Footer End Here -->
+
+<!-- JS Links Start Here -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="file.js"></script>
+<!-- JS Links End Here -->
+</body>
+</html>

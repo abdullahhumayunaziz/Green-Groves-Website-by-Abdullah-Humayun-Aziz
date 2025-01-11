@@ -1,0 +1,32 @@
+.gardener{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#scrollUpBtn {
+    position: fixed;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid grey;
+    z-index: 1000;
+}
+
+#scrollUpBtn:hover {
+    background-color: white;
+    color: green;
+    border: 3px solid grey;
+}
+.container{
+    margin-top: 100px;
+}
+body{
+    background-color: rgba(250, 235, 215, 0.445);
+}

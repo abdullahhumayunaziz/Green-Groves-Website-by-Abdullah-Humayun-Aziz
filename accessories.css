@@ -1,0 +1,62 @@
+.sh1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    color: green;
+}
+.smaindiv1{
+    display: flex;
+    gap: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.sdiv1{
+    height: 420px;
+    width: 370px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: rgb(39, 38, 38);
+}
+.simg1{
+    width: 400px;
+    height: 300px;
+}
+.sh2{
+    text-align: center;
+    font-size: 23px;
+    color: rgb(105, 101, 41);
+    font-family: cursive;
+}
+.container{
+    margin-top: 100px;
+}
+.sp1{
+    text-align: center;
+    font-family: cursive;
+    color: rgb(105, 101, 41);
+    font-size: 15px;
+}
+span{
+    color: white;
+}
+#scrollUpBtn {
+    position: fixed;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid grey;
+    z-index: 1000;
+}
+
+#scrollUpBtn:hover {
+    background-color: white;
+    color: green;
+    border: 3px solid grey;
+}

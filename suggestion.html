@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <style>
+     /* Header Section */
+      header {
+        background-color: #28a745;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+
+      /* Section Title */
+      h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 50px 0;
+      }
+
+      /* Main Container */
+      .container1 {
+        margin-top: 30px;
+      }
+
+      /* Service Section */
+      .services {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .service-card {
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 30%;
+      }
+
+      .service-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .service-card h3 {
+        padding: 20px;
+        background-color: #28a745;
+        color: white;
+        margin: 0;
+      }
+
+      .service-card p {
+        padding: 15px;
+        font-size: 1rem;
+      }
+
+      .service-card ul {
+        padding: 15px;
+        list-style: none;
+      }
+
+      .service-card ul li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+      /* Responsive Styling */
+      @media (max-width: 768px) {
+        .service-card {
+          width: 100%;
+        }
+      }
+      * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+          background-color: rgba(250, 235, 215, 0.445);
+        }
+        nav {
+            background: white;
+            font-family: cursive;
+            display: flex;
+            height: 80px;
+            top: 0px;
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .logo {
+            width: 200px;
+            height: 80px;
+        }
+
+        .logo:hover {
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 200px;
+            
+        }
+
+        nav ul li {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #435e4d;
+            padding: 12px 16px;
+            display: block;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            color: #8f8e7f;
+        }
+
+        .dropdown-content a:hover {
+            background: #bad0ba;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        a {
+            margin-top: 7px;
+        }
+        footer {
+            background-color: rgb(0, 56, 0);
+            position: absolute;
+            width: 100%;
+            height: 510px;
+            margin-top: 30px;
+        }
+
+        .logo1 {
+            margin-left: 80px;
+            width: 200px;
+            height: 100px;
+        }
+
+        .logo1:hover {
+            cursor: pointer;
+        }
+        .hh15{
+            color: white;
+            font-size: 50px;
+            margin-left: 100px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            position: absolute;
+        }
+        .hp12{
+            position: absolute;
+            margin-top: 80px;
+            color: white;
+            font-size: 20px;
+            margin-left: 100px;
+            font-weight: bolder;
+            font-family:  serif;
+        }
+        .input1{
+            position: absolute;
+            margin-top: 160px;
+            width: 350px;
+            border-radius: 20px;
+            margin-left: 100px;
+            height: 40px;
+            border: 2px solid green;
+        }
+        .input1::placeholder{
+            font-size: 15px;
+            font-weight: bolder;
+            text-align: center;
+            font-family:  serif;
+        }
+        .input1:focus{
+            border-color: green;
+            outline: none;
+        }
+        .input2{
+            position: absolute;
+            margin-left: 100px;
+            width: 150px;
+            height: 40px;
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+            border: 2px solid orange;
+            font-family:  serif;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 230px;
+            font-weight: bolder;
+        }
+        .hh16{
+            position: absolute;
+            color: white;
+            margin-left: 750px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 50px;
+        }
+        .ha1{
+            text-decoration: none;
+            margin-left: 750px;
+            color: white;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .ha2{
+            text-decoration: none;
+            margin-left: 750px;
+            color: white;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .hol1{
+            margin-top: 80px;
+        }
+        .hli1{
+            list-style-type: none;
+        }
+        
+        .himg7{
+            position: absolute;
+            z-index: 1;
+            margin-left: 750px;
+            margin-top: 340px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg8{
+            position: absolute;
+            z-index: 1;
+            margin-left: 800px;
+            margin-top: 350px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg9{
+            position: absolute;
+            z-index: 1;
+            margin-left: 850px;
+            margin-top: 340px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg10{
+            position: absolute;
+            z-index: 1;
+            margin-left: 900px;
+            margin-top: 350px;
+            height: 40px;
+            width: 40px;
+        }
+        .himg11{
+            position: absolute;
+            z-index: 1;
+            margin-left: 950px;
+            margin-top: 340px;
+            height: 40px;
+            width: 40px;
+        }
+        .hp13{
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+        }
+        hr{
+            border: 1px solid yellowgreen;
+        }
+        #scrollUpBtn {
+    position: fixed;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid grey;
+    z-index: 1000;
+}
+
+#scrollUpBtn:hover {
+    background-color: white;
+    color: green;
+    border: 3px solid grey;
+}
+.container{
+margin-top: 110px;
+}
+img{
+  cursor: pointer;
+}
+.ul1{
+  margin-top: 40px;
+}
+
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Green Groves Gardening</title>
+    <link rel="icon" href="eProjectHImages/navbar logo.png">
+  </head>
+  <body>
+     <!-- Navbar Start Here -->
+     <nav>
+      <img src="eProjectHImages/navbar logo.png" alt="" class="logo">
+      <ul>
+          <li><a href="index.html">Home Gardening</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="dropdown">
+              <a href="#">Gardening Supplys</a>
+              <div class="dropdown-content">
+                  <a href="tools.html">Tools</a>
+                  <a href="accessories.html">Accessories</a>
+                  <a href="suggestion.html">Suggestoin</a>
+              </div>
+          </li>
+          <li class="dropdown">
+              <a href="#">Gardening Resoures</a>
+              <div class="dropdown-content">
+                  <a href="essential.html">Essentials</a>
+                  <a href="pots&container.html">Pots & Containers</a>
+              </div>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+  </nav>
+  <!-- Navbar End Here -->
+<div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1>Well Come to Our Gardening Services</h1>
+      <p>Bringing Nature to Your Doorstep with Expertise and Care</p>
+    </header>
+
+    <!-- Gardening Services Section -->
+    <div class="container1">
+      <h2>Our Gardening Services</h2>
+      <p style="text-align: center; font-size: 1.1rem;">We offer a wide range of professional gardening services to make your garden thrive. Our team is dedicated to providing the best care and maintenance, ensuring that your outdoor spaces are as beautiful as possible. From planting new flowers and shrubs to seasonal lawn care, we handle all aspects of gardening with care and attention to detail.</p>
+
+      <div class="services">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <img src="eProjectHImages/cards1.jpg" alt="Planting">
+          <h3>Planting Services</h3>
+          <p>We specialize in planting a variety of flowers, shrubs, and trees that will brighten up your garden and contribute to the overall aesthetic. Our experienced team ensures that plants are selected based on your garden's environment and your preferences.</p>
+          <ul>
+            <li>Tree and Shrub Planting</li>
+            <li>Flower Bed Design and Maintenance</li>
+            <li>Seasonal Planting</li>
+            <li>Plant Health Assessments</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <img src="eProjectHImages/cards3.jpg" alt="Lawn Care">
+          <h3>Lawn Care</h3>
+          <p>We provide expert lawn care to keep your grass lush and vibrant. Our services ensure that your lawn remains healthy and well-maintained throughout the year, with proper fertilization, aeration, and regular mowing.</p>
+          <ul class="ul1">
+            <li>Grass Fertilization for Optimal Growth</li>
+            <li>Weed Control and Prevention</li>
+            <li>Lawn Aeration and Seeding</li>
+            <li>Regular Mowing and Trimming</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <img src="eProjectHImages/cards5.jpg" alt="Tree Care">
+          <h3>Tree Care</h3>
+          <p>Our tree care services are designed to ensure the longevity and health of the trees in your garden. From pruning and trimming to assessments and removal, we handle all aspects of tree care with professionalism and expertise.</p>
+          <ul class="ul1">
+            <li>Tree Pruning and Shaping</li>
+            <li>Tree Removal and Stump Grinding</li>
+            <li>Tree Health Assessments</li>
+            <li>Emergency Tree Services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </div>
+    <button id="scrollUpBtn" onclick="scrollToTop()"><i class="ri-arrow-up-line"></i></button>
+    <!-- Footer Start Here -->
+<footer data-aos="fade-down">
+<img src="eProjectHImages/1384055.png" alt="" class="himg7" data-aos="fade-up"
+data-aos-anchor-placement="top-bottom">
+<img src="eProjectHImages/5968764.png" alt="" class="himg8" data-aos="fade-up"
+data-aos-anchor-placement="top-bottom"> 
+<img src="eProjectHImages/3670151.png" alt="" class="himg9" data-aos="fade-up"
+data-aos-anchor-placement="top-bottom">
+<img src="eProjectHImages/3955024.png" alt="" class="himg10" data-aos="fade-up"
+data-aos-anchor-placement="top-bottom">
+<img src="eProjectHImages/3670147.png" alt="" class="himg11" data-aos="fade-up"
+data-aos-anchor-placement="top-bottom">
+<h1 class="hh15" data-aos="fade-up">Learn to grow.</h1>
+<p class="hp12" data-aos="fade-up">Sign up for weekly gardening tips, product <br> reviews and discounts.</p>
+<input class="input1" type="text" placeholder="Enter your email to our newsletter" required data-aos="fade-up">
+<input class="input2" type="button" value="Submit" data-aos="fade-up" onclick="submit()">
+<h1 class="hh16" data-aos="fade-up">Company</h1>
+<ol class="hol1" data-aos="fade-up">
+    <li class="hli1"><a class="ha1" href="index.html">Home Gardening</a></li>
+    <li class="hli1"><a class="ha1" href="about.html">About Us</a></li>
+    <li class="hli1"><a class="ha1" href="tools.html">Gardening Tools</a></li>
+    <li class="hli1"><a class="ha1" href="accessories.html">Gardening Accessories</a></li>
+    <li class="hli1"><a class="ha2" href="suggestion.html">Gardening Suggestoin</a></li>
+    <li class="hli1"><a class="ha2" href="essential.html">Gardening Essentials</a></li>
+    <li class="hli1"><a class="ha2" href="pots&container.html">Gardening Pots & Container</a></li>
+    <li class="hli1"><a class="ha2" href="contact.html">Contact Us</a></li>
+</ol>
+<img src="eProjectHImages/footer logo.png" alt="" class="logo1">
+<hr>
+<p class="hp13">© 2024/2025 Your Website | Designed by Abdullah Humayun Aziz S/O Muhammad Humayun</p>
+</footer>
+<!-- Footer End Here -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="file.js"></script>
+  </body>
+</html>

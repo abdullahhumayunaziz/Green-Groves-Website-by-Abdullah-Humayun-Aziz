@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 600px;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.158);
+    border-radius: 30px;
+    position: absolute;
+}
+.img2{
+    width: 300px;
+    height: 170px;
+    margin-left: 120px;
+
+}
+label {
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
+    font-family: cursive;
+    font-weight: bolder;
+}
+.cinput1[type="text"],.cinput2[type="email"],textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-family: cursive;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #45a049;
+}
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+.div1{
+    position: absolute;
+    width: 600px;
+    margin-left: 650px;
+    display: flex;
+    height: 550px;
+    margin-top: 50px;
+    width: 610px;
+    overflow: hidden;
+}
+.img1{
+    width: 600px;
+    height: 635px;
+}
+.cdiv{
+    margin-top: 80px;
+}
+.cifram1{
+    border-radius: 30px;
+    margin-top: 640px;
+    width: 1200px;
+    height: 400px;
+}
+img{
+    cursor: pointer;
+}
+#scrollUpBtn {
+    position: fixed;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid grey;
+    z-index: 1000;
+}
+
+#scrollUpBtn:hover {
+    background-color: white;
+    color: green;
+    border: 3px solid grey;
+}
